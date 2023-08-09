@@ -1,0 +1,6 @@
+@mixin link($color: $text-color) {
+  font-size: calc(1rem + 1.4vw);
+  color: $color;
+  text-transform: uppercase;
+  font-weight: 400;
+}
