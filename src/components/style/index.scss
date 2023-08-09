@@ -2,3 +2,9 @@
 @import "./reset";
 @import "./mixins";
 @import "./components";
+
+.wrapper {
+  max-width: 1400px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}

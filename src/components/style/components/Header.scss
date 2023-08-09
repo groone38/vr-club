@@ -1,3 +1,22 @@
-.link {
-  @include link();
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    @include link();
+  }
 }

@@ -1,18 +1,38 @@
 import React from "react";
+import logo from "../assets/images/logo.jpg";
 
 const Header = () => {
   return (
-    <header>
-      <ul>
+    <header className="header">
+      <div>
+        <img src={logo} alt="logo" />
+      </div>
+      <ul className="header__list">
         <li>
-          <a href="!#">Игры</a>
+          <a href="!#" className="header__link">
+            Цены
+          </a>
         </li>
         <li>
-          <a href="!#"></a>
+          <a href="!#" className="header__link">
+            Игры
+          </a>
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <a href="!#" className="header__link">
+            Праздники
+          </a>
+        </li>
+        <li>
+          <a href="!#" className="header__link">
+            Галерея
+          </a>
+        </li>
+        <li>
+          <a href="!#" className="header__link">
+            Контакты
+          </a>
+        </li>
       </ul>
     </header>
   );
