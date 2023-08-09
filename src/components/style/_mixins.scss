@@ -12,13 +12,13 @@
 }
 
 @mixin h1() {
-  font-size: calc(2.8rem + 1.4vw);
+  font-size: calc(2.2rem + 1.4vw);
   color: $white;
   font-weight: bold;
 }
 
 @mixin h2() {
-  font-size: calc(2.2rem + 1.4vw);
+  font-size: calc(1.7rem + 1.4vw);
   color: $white;
   font-weight: bold;
 }
@@ -34,4 +34,10 @@
     border: 1px solid $neon-color;
     color: $neon-color;
   }
+}
+
+@mixin priceText() {
+  font-size: calc(1rem + 1.4vw);
+  font-weight: 400;
+  color: $white;
 }

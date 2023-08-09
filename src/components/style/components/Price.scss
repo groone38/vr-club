@@ -1,0 +1,35 @@
+.price__block {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  gap: 5rem;
+  margin-top: 5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+  h2 {
+    @include h2();
+  }
+}
+.price__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  span {
+    @include priceText();
+  }
+}
+
+.price__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.price__block_btn {
+  margin-top: 10px;
+  @include btn();
+}
