@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rem;
+  align-items: center;
+  height: calc(100vh - 123px);
+  text-align: center;
+  gap: 5rem;
+
+  &__title {
+    h1 {
+      @include h1();
+    }
+  }
+
+  &__text {
+    h2 {
+      @include h2();
+    }
+  }
+
+  &__btn {
+    button {
+      @include btn();
+    }
+  }
+}

@@ -1,12 +1,37 @@
-@mixin link($color: $text-color) {
+@mixin link($color: $white) {
   font-size: calc(1rem + 1.4vw);
   color: $color;
   text-transform: uppercase;
   font-weight: 400;
   text-decoration: none;
-  transition: ease-in-out 0.5s;
+  transition: $ease-5s;
   &:hover {
     color: $neon-color;
     border-bottom: 1px solid $neon-color;
+  }
+}
+
+@mixin h1() {
+  font-size: calc(2.8rem + 1.4vw);
+  color: $white;
+  font-weight: bold;
+}
+
+@mixin h2() {
+  font-size: calc(2.2rem + 1.4vw);
+  color: $white;
+  font-weight: bold;
+}
+
+@mixin btn() {
+  background-color: transparent;
+  color: $white;
+  border: 1px solid $white;
+  padding: 1rem 2.5rem;
+  transition: $ease-5s;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid $neon-color;
+    color: $neon-color;
   }
 }
